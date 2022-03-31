@@ -1,0 +1,68 @@
+.about {
+    margin-top: 175px;
+    min-height: 668px;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img {
+        width: 590px;
+        height: 666px;
+    }
+    &__box {
+        width: 452px;
+        margin-right: 43px;
+        &-title {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 25px;
+            color: #858585;
+        }
+        &-subtitle {
+            margin-top: 30px;
+            span {
+                color: #55A630;
+            }
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 107%;
+            letter-spacing: -0.4px;
+            color: $main-color;
+        }
+        &-text {
+            margin-top: 75px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+        }
+    }
+    &__detail {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        a {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            font-size: 25px;
+            color: $second-color;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                width: 58px;
+                height: 8px;
+                background-image: url('../../icons/about/arrow.svg');
+                margin-left: 48px;
+            }
+            &:hover {
+                &:after {
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+}

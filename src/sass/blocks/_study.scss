@@ -1,0 +1,45 @@
+.study {
+    min-height: 690px;
+    margin-top: 175px;
+    &__subtitle {
+        position: absolute;
+        bottom: 25px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 83%;
+            width: 84px;
+            height: 8px;
+            background-image: url('../../icons/study/arrow.svg');
+            margin-left: 28px;
+        }
+        &:hover {
+            &:after {
+                margin-left: 35px;
+            }
+        }
+    }
+    &__list {}
+    &__wrapper1 {
+        margin-top: 76px;
+        &-img1 {
+            cursor: pointer;
+            position: relative;
+            width: 570px;
+            height: 260px;
+            padding: 36px 25px;
+            background-image: url("../../img/study/bg1.jpeg");
+            &:hover {
+                .study__subtitle {
+                    top: 35px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.banner {
+    position: relative;
+    height: 584px;
+    background: #ECFFEB;
+    margin-top: 99px;
+    padding: 71px 0px 138px 118px;
+    z-index: 1;
+    &__text {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #424242;
+    }
+    &__title {
+        width: 496px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 65px;
+        color: $second-color;
+        margin-bottom: 0;
+    }
+    &__subtitle {
+        margin-top: 20px;
+        width: 419px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        color: $main-color;
+    }
+    &__btn {
+        display: inline-block;
+        margin-top: 57px;
+        width: 285px;
+        height: 66px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18px;
+        background: $second-color;
+        text-align: center;
+        line-height: 66px;
+        color: #fff;
+        cursor: pointer;
+    }
+    &__btn2 {
+        display: inline-block;
+        width: 285px;
+        height: 66px;
+        border: 1px solid $second-color;
+        box-sizing: border-box;
+        line-height: 66px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        color: $second-color;
+        margin-left: 20px;
+        cursor: pointer;
+        z-index: 0;
+    }
+    &__img {
+        position: absolute;
+        width: 681px;
+        height: 556px;
+        right: 85px;
+        top: 28px;
+        z-index: -1;
+    }
+}

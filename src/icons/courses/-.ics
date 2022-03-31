@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//udemy.com//Udemy
+METHOD:PUBLISH
+BEGIN:VEVENT
+ORGANIZER;CN="Udemy":mailto:no-reply@udemy.com
+SUMMARY:Время учиться!
+SEQUENCE:0
+DTSTAMP:20220329T191012Z
+DTSTART;TZID=Asia/Tashkent:20220330T050000
+DTEND;TZID=Asia/Tashkent:20220330T050300
+UID:255816
+RRULE:FREQ=DAILY;
+DESCRIPTION:Полный курс по JavaScript + React - с нуля до результата (https://www.udemy.com/course/javascript_full/learn/)
+
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Время учиться!
+END:VALARM
+END:VEVENT
+END:VCALENDAR

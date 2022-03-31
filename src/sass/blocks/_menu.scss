@@ -1,0 +1,40 @@
+// templates
+// .hamburger {
+//     position: fixed;
+//     top: 20px;
+//     right: 30px;
+//     height: 21px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//     cursor: pointer;
+//     span {
+//         display: block;
+//         width: 30px;
+//         height: 3px;
+//         background: #151812;
+//     }
+//     span.long {
+//         width: 36px;
+//     }
+// }
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-top: 22.5px;
+    &__item {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $main-color;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: #55A630;
+        }
+    }
+}

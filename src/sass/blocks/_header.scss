@@ -1,0 +1,50 @@
+.header {
+    min-height: 153px;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 84.5px;
+        &-logo {
+            height: 63px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        &_phone {
+            display: flex;
+            align-items: center;
+            width: 268px;
+            justify-content: space-between;
+            &-img {
+                width: 28px;
+                height: 28px;
+            }
+            &-call {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 26px;
+                /* identical to box height, or 104% */
+                color: $main-color;
+            }
+        }
+        &_social {
+            display: flex;
+            align-items: center;
+            width: 82px;
+            justify-content: space-between;
+            margin-left: 58px;
+        }
+        &_lang {
+            display: flex;
+            align-items: center;
+            width: 66px;
+            justify-content: space-between;
+            margin-left: 66px;
+        }
+    }
+    // &__navigation {}
+}
