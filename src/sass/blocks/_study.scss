@@ -10,24 +10,28 @@
         line-height: 38px;
         text-transform: uppercase;
         color: #FFFFFF;
-        &:after {
-            content: '';
-            position: absolute;
-            top: 83%;
-            width: 84px;
-            height: 8px;
-            background-image: url('../../icons/study/arrow.svg');
-            margin-left: 28px;
-        }
-        &:hover {
+        &:first-child {
             &:after {
-                margin-left: 35px;
+                content: '';
+                position: absolute;
+                top: 83%;
+                width: 84px;
+                height: 8px;
+                background-image: url('../../icons/study/arrow.svg');
+                margin-left: 28px;
             }
         }
+        &:after {
+            content: none;
+        }
     }
-    &__list {}
+    &__list {
+        visibility: hidden;
+    }
     &__wrapper1 {
         margin-top: 76px;
+        display: flex;
+        justify-content: space-between;
         &-img1 {
             cursor: pointer;
             position: relative;
@@ -35,9 +39,89 @@
             height: 260px;
             padding: 36px 25px;
             background-image: url("../../img/study/bg1.jpeg");
+            box-shadow: inset 0 0 0 1000px rgba(35, 35, 35, .6);
             &:hover {
-                .study__subtitle {
-                    top: 35px;
+                .study {
+                    &__subtitle {
+                        top: 35px;
+                        &:first-child {
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                top: 31%;
+                            }
+                        }
+                    }
+                    &__list {
+                        position: absolute;
+                        visibility: visible;
+                        bottom: 15px;
+                        left: 31px;
+                        width: 296px;
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        list-style-type: '-';
+                        li {
+                            position: relative;
+                        }
+                        li span {
+                            position: absolute;
+                            left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        &-img2 {
+            cursor: pointer;
+            position: relative;
+            width: 570px;
+            height: 260px;
+            padding: 36px 25px;
+            background-image: url("../../img/study/bg2.jpeg");
+            box-shadow: inset 0 0 0 1000px rgba(35, 35, 35, .6);
+            .study__subtitle {
+                &:after {
+                    content: none;
+                }
+            }
+            &:hover {
+                .study {
+                    &__subtitle {
+                        top: 100px;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            top: 18%;
+                            width: 84px;
+                            height: 8px;
+                            background-image: url('../../icons/study/arrow.svg');
+                            margin-left: 28px;
+                        }
+                    }
+                    &__list {
+                        position: absolute;
+                        visibility: visible;
+                        bottom: 15px;
+                        left: 31px;
+                        width: 296px;
+                        font-family: 'Montserrat';
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FFFFFF;
+                        list-style-type: '-';
+                        li {
+                            position: relative;
+                        }
+                        li span {
+                            position: absolute;
+                            left: 5px;
+                        }
+                    }
                 }
             }
         }
