@@ -12,10 +12,11 @@
     }
     &__carousel {
         margin-top: 75px;
-        min-height: 675px;
+        // min-height: 675px;
         &_inner {
             // width: 361px;
             &-item {
+                position: relative;
                 max-width: 520px;
                 height: 453px;
                 background: #FFFFFF;
@@ -23,6 +24,68 @@
                 &-img {
                     width: 100%;
                     height: auto;
+                }
+                &-date {
+                    margin: 15px 0px 0px 26px;
+                    font-family: 'Montserrat';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $main-color;
+                    opacity: 0.8;
+                }
+                &-title {
+                    margin: 10px 0px 0px 26px;
+                    height: 84px;
+                    width: 235px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: $main-color;
+                }
+                &-coach {
+                    width: 259px;
+                    position: absolute;
+                    font-family: 'Montserrat';
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 21px;
+                    color: $main-color;
+                    opacity: 0.8;
+                    bottom: 38px;
+                    left: 26px;
+                }
+                &-cost {
+                    position: absolute;
+                    right: 0;
+                    top: 223px;
+                    height: 132px;
+                    width: 136px;
+                    background: #ECF9EB;
+                    padding-top: 62px;
+                    font-family: 'Montserrat';
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 22px;
+                    color: #424242;
+                    opacity: 0.8;
+                    text-align: center;
+                }
+                &-link {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    height: 98px;
+                    width: 136px;
+                    background: $second-color;
+                    padding-top: 47px;
+                    img {
+                        width: 22px;
+                        margin: 0 auto;
+                    }
                 }
             }
         }
