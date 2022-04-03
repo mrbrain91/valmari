@@ -1,0 +1,117 @@
+.offer {
+    position: relative;
+    min-height: 715px;
+    margin-top: 177px;
+    &__carousel {
+        margin-top: 75px;
+        // min-height: 675px;
+        &_inner {
+            // width: 361px;
+            &-item {
+                img {
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+        }
+    }
+}
+
+// /* Слайдер */
+// .slick-slider {
+//     // margin: 0 -30px;
+//     // overflow-x: hidden;
+// }
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized {}
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted {}
+// /* Ограничивающая оболочка */
+// .slick-list {}
+// /* Лента слайдов */
+// .slick-track {}
+// /* Слайд */
+// .slick-slide {}
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active {}
+// /* Слайд основной */
+// .slick-slide.slick-current {}
+// /* Слайд по центру */
+// .slick-slide.slick-center {}
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned {}
+// /* Стрелка */
+// .slick-arrow {}
+// /* Стрелка влево */
+// .slick-arrow.slick-prev {}
+// /* Стрелка вправо */
+// .slick-arrow.slick-next {}
+// /* Стрелка не активная */
+// .slick-arrow.slick-disabled {}
+// /* Элемент точки */
+// .courses__carousel_inner .slick-arrow {}
+.offer__carousel_inner .slick-arrow.slick-prev {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+    width: 16px;
+    height: 24px;
+    border: none;
+    left: -30px;
+    background: url('../../icons/courses/sl-arrow_l.svg') 0 0 no-repeat;
+    outline: none;
+}
+
+.offer__carousel_inner .slick-arrow.slick-next {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    font-size: 0;
+    width: 16px;
+    height: 24px;
+    border: none;
+    right: -30px;
+    background: url('../../icons/courses/sl-arrow_r.png') 0 0 no-repeat;
+    outline: none;
+}
+
+.offer__carousel_inner .slick-track {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Точки (булиты) */
+
+.offer__carousel_inner .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    margin: 0;
+    margin-top: 75px;
+}
+
+.offer__carousel_inner .slick-dots li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: #B7ECB1;
+    border-radius: 50%;
+    border: none;
+    margin: 0 8px;
+}
+
+.offer__carousel_inner .slick-dots li {
+    list-style-type: none;
+    display: flex;
+}
+
+
+/* Активная точка */
+
+.offer__carousel_inner .slick-dots li.slick-active button {
+    background: #55A630;
+    outline: none;
+}

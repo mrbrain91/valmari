@@ -11,4 +11,10 @@ $(document).ready(function() {
         slidesToScroll: 1,
         dots: true
     });
+    $('.offer__carousel_inner').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true
+    });
 });
